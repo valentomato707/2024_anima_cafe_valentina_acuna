@@ -3,15 +3,13 @@ import { FilaCategoria } from "./FilaCategoria";
 export const TablaProductos = () => {
   return (
     <>
-      <div id="tablaProductos">
-        <h2 id="tituloNombre">Nombre</h2>
+      <section id="tituloInformacion">
+        <h3 id="tituloNombre">Nombre</h3>
 
-        <h2 id="tituloPrecio">Precio</h2>
+        <h3 id="tituloPrecio">Precio</h3>
 
-        <h2 id="tituloStock">Stock</h2>
-      </div>
-
-      <FilaCategoria />
+        <h3 id="tituloStock">Stock</h3>
+      </section>
     </>
   );
 };

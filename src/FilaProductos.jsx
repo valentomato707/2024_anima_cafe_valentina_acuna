@@ -6,12 +6,15 @@ export const FilaProductos = ({ categoria }) => {
   );
   return (
     <>
-      {productosPorCategoria.map((producto) => {
+      {productosPorCategoria.map((producto, index) => {
+        const strikeThrough = producto.stock === 0 ? "strikethrough" : "";
         return (
-          <div>
-            <p>{producto.nombre}</p>
-            <p>{producto.precio}</p>
-            <p>{producto.stock}</p>
+          <div id="productosData" key={index}>
+            <p id="nombre" class={strikeThrough}>
+              {producto.nombre}
+            </p>
+            <p id="precio">{producto.precio}</p>
+            <p id="stock">{producto.stock}</p>
           </div>
         );
       })}
